@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pul.bookdemo.banner.BannerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.pul.bookdemo.banner.RecyclerViewBannerNew
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:orientation="horizontal">
+
+            </com.example.pul.bookdemo.banner.RecyclerViewBannerNew>
+
+            <com.example.pul.bookdemo.banner.RecyclerViewBannerNew
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:orientation="vertical">
+
+            </com.example.pul.bookdemo.banner.RecyclerViewBannerNew>
+
+            <com.example.pul.bookdemo.banner.NormalRecyclerViewBanner
+                android:id="@+id/normal_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:orientation="horizontal">
+
+            </com.example.pul.bookdemo.banner.NormalRecyclerViewBanner>
+
+            <com.example.pul.bookdemo.banner.NormalRecyclerViewBanner
+                android:id="@+id/normal_banner1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:orientation="vertical">
+
+            </com.example.pul.bookdemo.banner.NormalRecyclerViewBanner>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/bt_glide"
+                    android:drawableTop="@mipmap/bt_glide"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="Glide"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_pie_chart"
+                    android:drawableTop="@mipmap/bt_pie_chat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_advertising"
+                    android:drawableTop="@mipmap/bt_ad"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="滑动"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_below="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/bt_banner"
+                    android:drawableTop="@mipmap/banner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="banner"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_1"
+                    android:drawableTop="@mipmap/bt_pie_chat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="View"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_2"
+                    android:drawableTop="@mipmap/bt_ad"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="滑动"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
