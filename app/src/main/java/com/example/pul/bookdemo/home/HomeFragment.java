@@ -13,6 +13,7 @@ import com.example.pul.bookdemo.R;
 import com.example.pul.bookdemo.activity.GlideActivity;
 import com.example.pul.bookdemo.activity.MainActivity;
 import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
+import com.example.pul.bookdemo.animator.AnimatorActivity;
 import com.example.pul.bookdemo.banner.BannerActivity;
 
 import butterknife.BindView;
@@ -36,6 +37,8 @@ public class HomeFragment extends Fragment {
     Button btAdvertising;
     @BindView(R.id.bt_banner)
     Button btBanner;
+    @BindView(R.id.bt_animator)
+    Button btAnimator;
 
     @Nullable
     @Override
@@ -46,7 +49,7 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising ,R.id.bt_banner})
+    @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_glide:
@@ -61,10 +64,14 @@ public class HomeFragment extends Fragment {
                 Intent intentAd = new Intent(getActivity(), ZhiHuAdvertisingActivity.class);
                 startActivity(intentAd);
                 break;
-                case R.id.bt_banner:
-                    Intent intentBanner = new Intent(getActivity(), BannerActivity.class);
-                    startActivity(intentBanner);
-                    break;
+            case R.id.bt_banner:
+                Intent intentBanner = new Intent(getActivity(), BannerActivity.class);
+                startActivity(intentBanner);
+                break;
+            case R.id.bt_animator:
+                Intent intentAnimator = new Intent(getActivity(), AnimatorActivity.class);
+                startActivity(intentAnimator);
+                break;
             default:
                 break;
         }

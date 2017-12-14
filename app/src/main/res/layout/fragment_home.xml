@@ -74,14 +74,13 @@
                     />
 
                 <Button
-                    android:id="@+id/bt_1"
+                    android:id="@+id/bt_animator"
                     android:drawableTop="@mipmap/bt_pie_chat"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:background="#00000000"
-                    android:text="View"
-                    android:visibility="invisible"
+                    android:text="Animator"
                     android:textAllCaps="false"
                     />
 

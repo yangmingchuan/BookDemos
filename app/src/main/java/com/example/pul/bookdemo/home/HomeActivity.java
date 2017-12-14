@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.example.pul.bookdemo.R;
 import com.example.pul.bookdemo.find.FindFragment;
-import com.example.pul.bookdemo.me.MeFragment;
+import com.example.pul.bookdemo.mine.MeFragment;
 
 public class HomeActivity extends AppCompatActivity {
 

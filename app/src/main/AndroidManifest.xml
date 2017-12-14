@@ -11,19 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <receiver android:name=".widget.MyWidgetProvider">
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_info">
-            </meta-data>
+                android:resource="@xml/appwidget_info"></meta-data>
 
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
-                <action android:name="android.appwidget.action.APPWIDGET_RESTORED"/>
-                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
-                <action android:name="com.example.pul.bookdemo.clickaction"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS" />
+                <action android:name="android.appwidget.action.APPWIDGET_RESTORED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="com.example.pul.bookdemo.clickaction" />
             </intent-filter>
         </receiver>
 
@@ -31,7 +29,7 @@
             android:name=".service.MessengerService"
             android:process=":remote" />
 
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ZhiHuAdvertisingActivity" />
         <activity android:name=".activity.GlideActivity" />
         <activity
@@ -43,7 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".banner.BannerActivity"></activity>
+        <activity android:name=".banner.BannerActivity" />
+        <activity android:name=".animator.AnimatorActivity"></activity>
     </application>
 
 </manifest>

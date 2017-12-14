@@ -12,7 +12,6 @@ import android.graphics.Matrix;
 import android.os.SystemClock;
 import android.widget.RemoteViews;
 import android.widget.Toast;
-
 import com.example.pul.bookdemo.R;
 
 /**
