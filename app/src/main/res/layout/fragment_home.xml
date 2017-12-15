@@ -85,14 +85,13 @@
                     />
 
                 <Button
-                    android:id="@+id/bt_2"
+                    android:id="@+id/bt_agentweb"
                     android:drawableTop="@mipmap/bt_ad"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:background="#00000000"
-                    android:text="滑动"
-                    android:visibility="invisible"
+                    android:text="agentweb"
                     android:textAllCaps="false"
                     />
 

@@ -56,7 +56,6 @@ public class AnimatorActivity extends AppCompatActivity {
         anim.start();
     }
 
-
     @OnClick({R.id.bt_start_animator})
     public void onClick(View view){
         switch (view.getId()){

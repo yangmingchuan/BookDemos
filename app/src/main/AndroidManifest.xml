@@ -3,7 +3,16 @@
     package="com.example.pul.bookdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <!-- 直接通过 WindowManager 添加 Window -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- 桌面小工具  注册方式类似与广播 -->
         <receiver android:name=".widget.MyWidgetProvider">
             <meta-data
                 android:name="android.appwidget.provider"
@@ -42,7 +53,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".banner.BannerActivity" />
-        <activity android:name=".animator.AnimatorActivity"></activity>
+        <activity android:name=".animator.AnimatorActivity" />
+        <activity android:name=".activity.AgentwebActivity"></activity>
     </application>
 
 </manifest>

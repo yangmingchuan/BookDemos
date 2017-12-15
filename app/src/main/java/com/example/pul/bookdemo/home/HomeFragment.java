@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.pul.bookdemo.R;
+import com.example.pul.bookdemo.activity.AgentwebActivity;
 import com.example.pul.bookdemo.activity.GlideActivity;
 import com.example.pul.bookdemo.activity.MainActivity;
 import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
@@ -39,6 +40,8 @@ public class HomeFragment extends Fragment {
     Button btBanner;
     @BindView(R.id.bt_animator)
     Button btAnimator;
+    @BindView(R.id.bt_agentweb)
+    Button btAgentweb;
 
     @Nullable
     @Override
@@ -49,7 +52,8 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator})
+    @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator
+    ,R.id.bt_agentweb})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_glide:
@@ -71,6 +75,10 @@ public class HomeFragment extends Fragment {
             case R.id.bt_animator:
                 Intent intentAnimator = new Intent(getActivity(), AnimatorActivity.class);
                 startActivity(intentAnimator);
+                break;
+            case R.id.bt_agentweb:
+                Intent intentAgentweb = new Intent(getActivity(), AgentwebActivity.class);
+                startActivity(intentAgentweb);
                 break;
             default:
                 break;
