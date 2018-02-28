@@ -96,6 +96,51 @@
                     />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_below="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/bt_mvp"
+                    android:drawableTop="@mipmap/mvp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="mvp案例"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_1"
+                    android:drawableTop="@mipmap/bt_pie_chat"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="Animator"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/bt_2"
+                    android:drawableTop="@mipmap/bt_ad"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="agentweb"
+                    android:visibility="invisible"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
         </RelativeLayout>
 
 

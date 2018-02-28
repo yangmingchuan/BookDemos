@@ -5,14 +5,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 直接通过 WindowManager 添加 Window -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +26,7 @@
         <receiver android:name=".widget.MyWidgetProvider">
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_info"></meta-data>
+                android:resource="@xml/appwidget_info" />
 
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -54,7 +55,8 @@
         </activity>
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".animator.AnimatorActivity" />
-        <activity android:name=".activity.AgentwebActivity"></activity>
+        <activity android:name=".activity.AgentwebActivity" />
+        <activity android:name=".mvp.view.MvpLoginActivity"></activity>
     </application>
 
 </manifest>
