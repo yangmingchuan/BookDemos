@@ -56,7 +56,8 @@
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".animator.AnimatorActivity" />
         <activity android:name=".activity.AgentwebActivity" />
-        <activity android:name=".mvp.view.MvpLoginActivity"></activity>
+        <activity android:name=".mvp.view.MvpLoginActivity" />
+        <activity android:name=".dialogframent.DialogFragmentActivity"></activity>
     </application>
 
 </manifest>

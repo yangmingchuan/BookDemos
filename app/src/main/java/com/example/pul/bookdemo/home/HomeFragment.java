@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.pul.bookdemo.R;
 import com.example.pul.bookdemo.activity.AgentwebActivity;
@@ -16,6 +17,7 @@ import com.example.pul.bookdemo.activity.MainActivity;
 import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
 import com.example.pul.bookdemo.animator.AnimatorActivity;
 import com.example.pul.bookdemo.banner.BannerActivity;
+import com.example.pul.bookdemo.dialogframent.DialogFragmentActivity;
 import com.example.pul.bookdemo.mvp.view.MvpLoginActivity;
 
 import butterknife.BindView;
@@ -45,6 +47,10 @@ public class HomeFragment extends Fragment {
     Button btAgentweb;
     @BindView(R.id.bt_mvp)
     Button btMvp;
+    @BindView(R.id.ll_2)
+    LinearLayout ll2;
+    @BindView(R.id.bt_dialog_fragment)
+    Button btDialogFragment;
 
     @Nullable
     @Override
@@ -56,7 +62,7 @@ public class HomeFragment extends Fragment {
     }
 
     @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator
-            , R.id.bt_agentweb,R.id.bt_mvp})
+            , R.id.bt_agentweb, R.id.bt_mvp,R.id.bt_dialog_fragment})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_glide:
@@ -86,6 +92,10 @@ public class HomeFragment extends Fragment {
             case R.id.bt_mvp:
                 Intent intentMvp = new Intent(getActivity(), MvpLoginActivity.class);
                 startActivity(intentMvp);
+                break;
+            case R.id.bt_dialog_fragment:
+                Intent intentDialog = new Intent(getActivity(), DialogFragmentActivity.class);
+                startActivity(intentDialog);
                 break;
             default:
                 break;
