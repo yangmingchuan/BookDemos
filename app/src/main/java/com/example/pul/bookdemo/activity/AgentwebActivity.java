@@ -19,6 +19,7 @@ import butterknife.ButterKnife;
  */
 
 public class AgentwebActivity extends AppCompatActivity {
+
     @BindView(R.id.fragment_web)
     FrameLayout fragmentWeb;
     @BindView(R.id.ll_content)
