@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 
 import com.example.pul.bookdemo.R;
 import com.example.pul.bookdemo.activity.AgentwebActivity;
+import com.example.pul.bookdemo.activity.FallActivity;
 import com.example.pul.bookdemo.activity.GlideActivity;
 import com.example.pul.bookdemo.activity.MainActivity;
 import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
@@ -51,6 +52,8 @@ public class HomeFragment extends Fragment {
     LinearLayout ll2;
     @BindView(R.id.bt_dialog_fragment)
     Button btDialogFragment;
+    @BindView(R.id.bt_imm_mode)
+    Button btImmMode;
 
     @Nullable
     @Override
@@ -62,7 +65,7 @@ public class HomeFragment extends Fragment {
     }
 
     @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator
-            , R.id.bt_agentweb, R.id.bt_mvp,R.id.bt_dialog_fragment})
+            , R.id.bt_agentweb, R.id.bt_mvp, R.id.bt_dialog_fragment,R.id.bt_imm_mode})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_glide:
@@ -96,6 +99,10 @@ public class HomeFragment extends Fragment {
             case R.id.bt_dialog_fragment:
                 Intent intentDialog = new Intent(getActivity(), DialogFragmentActivity.class);
                 startActivity(intentDialog);
+                break;
+            case R.id.bt_imm_mode:
+                Intent intentFall = new Intent(getActivity(), FallActivity.class);
+                startActivity(intentFall);
                 break;
             default:
                 break;

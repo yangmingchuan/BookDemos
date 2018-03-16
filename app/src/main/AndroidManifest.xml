@@ -57,7 +57,8 @@
         <activity android:name=".animator.AnimatorActivity" />
         <activity android:name=".activity.AgentwebActivity" />
         <activity android:name=".mvp.view.MvpLoginActivity" />
-        <activity android:name=".dialogframent.DialogFragmentActivity"></activity>
+        <activity android:name=".dialogframent.DialogFragmentActivity" />
+        <activity android:name=".activity.FallActivity"></activity>
     </application>
 
 </manifest>
