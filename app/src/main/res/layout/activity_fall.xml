@@ -10,8 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="468dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fall_bg"
-        android:scaleType="center"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:srcCompat="@drawable/timg"
+        android:scaleType="center" />
+
 </android.support.constraint.ConstraintLayout>
