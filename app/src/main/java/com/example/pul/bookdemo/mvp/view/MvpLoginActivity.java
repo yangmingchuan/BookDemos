@@ -23,6 +23,7 @@ import butterknife.OnClick;
 
 public class MvpLoginActivity extends AppCompatActivity implements loginContract.IViewContract {
 
+
     @BindView(R.id.et_user_name)
     EditText etUserName;
     @BindView(R.id.et_pass_word)

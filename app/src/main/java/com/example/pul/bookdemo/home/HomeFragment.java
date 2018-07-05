@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 
 import com.example.pul.bookdemo.R;
 import com.example.pul.bookdemo.activity.AgentwebActivity;
+import com.example.pul.bookdemo.activity.FallActivity;
 import com.example.pul.bookdemo.activity.GlideActivity;
 import com.example.pul.bookdemo.activity.MainActivity;
 import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
@@ -103,7 +104,6 @@ public class HomeFragment extends Fragment {
             case R.id.bt_service:
                 Intent intentService = new Intent(getActivity(), ServiceActivity.class);
                 startActivity(intentService);
-                break;
             default:
                 break;
         }

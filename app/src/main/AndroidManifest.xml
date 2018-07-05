@@ -61,6 +61,7 @@
         <activity android:name=".mvp.view.MvpLoginActivity" />
         <activity android:name=".dialogframent.DialogFragmentActivity" />
         <activity android:name=".guolinservice.ServiceActivity"></activity>
+        <activity android:name=".activity.FallActivity"></activity>
     </application>
 
 </manifest>
