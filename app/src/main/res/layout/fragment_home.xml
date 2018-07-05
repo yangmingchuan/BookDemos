@@ -128,21 +128,18 @@
                     />
 
                 <Button
-                    android:id="@+id/bt_2"
+                    android:id="@+id/bt_service"
                     android:drawableTop="@mipmap/bt_ad"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:background="#00000000"
-                    android:text="agentweb"
-                    android:visibility="invisible"
+                    android:text="service"
                     android:textAllCaps="false"
                     />
 
             </LinearLayout>
         </RelativeLayout>
-
-
 
     </ScrollView>
 

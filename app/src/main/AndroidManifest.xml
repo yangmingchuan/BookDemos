@@ -41,6 +41,8 @@
             android:name=".service.MessengerService"
             android:process=":remote" />
 
+        <service android:name=".guolinservice.GuolinService" />
+
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ZhiHuAdvertisingActivity" />
         <activity android:name=".activity.GlideActivity" />
@@ -57,7 +59,8 @@
         <activity android:name=".animator.AnimatorActivity" />
         <activity android:name=".activity.AgentwebActivity" />
         <activity android:name=".mvp.view.MvpLoginActivity" />
-        <activity android:name=".dialogframent.DialogFragmentActivity"></activity>
+        <activity android:name=".dialogframent.DialogFragmentActivity" />
+        <activity android:name=".guolinservice.ServiceActivity"></activity>
     </application>
 
 </manifest>

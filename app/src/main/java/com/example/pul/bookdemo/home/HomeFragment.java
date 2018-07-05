@@ -18,6 +18,7 @@ import com.example.pul.bookdemo.activity.ZhiHuAdvertisingActivity;
 import com.example.pul.bookdemo.animator.AnimatorActivity;
 import com.example.pul.bookdemo.banner.BannerActivity;
 import com.example.pul.bookdemo.dialogframent.DialogFragmentActivity;
+import com.example.pul.bookdemo.guolinservice.ServiceActivity;
 import com.example.pul.bookdemo.mvp.view.MvpLoginActivity;
 
 import butterknife.BindView;
@@ -51,6 +52,8 @@ public class HomeFragment extends Fragment {
     LinearLayout ll2;
     @BindView(R.id.bt_dialog_fragment)
     Button btDialogFragment;
+    @BindView(R.id.bt_service)
+    Button btService;
 
     @Nullable
     @Override
@@ -62,7 +65,7 @@ public class HomeFragment extends Fragment {
     }
 
     @OnClick({R.id.bt_glide, R.id.bt_pie_chart, R.id.bt_advertising, R.id.bt_banner, R.id.bt_animator
-            , R.id.bt_agentweb, R.id.bt_mvp,R.id.bt_dialog_fragment})
+            , R.id.bt_agentweb, R.id.bt_mvp,R.id.bt_dialog_fragment,R.id.bt_service})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_glide:
@@ -96,6 +99,10 @@ public class HomeFragment extends Fragment {
             case R.id.bt_dialog_fragment:
                 Intent intentDialog = new Intent(getActivity(), DialogFragmentActivity.class);
                 startActivity(intentDialog);
+                break;
+            case R.id.bt_service:
+                Intent intentService = new Intent(getActivity(), ServiceActivity.class);
+                startActivity(intentService);
                 break;
             default:
                 break;
